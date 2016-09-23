@@ -1,0 +1,13 @@
+//Raymond Chin
+//Michael Tran
+//Data Mining Personal Project
+//Syntax Document
+
+(For SPYDER: In the bottom right corner console)
++ -- add
+- -- subtract
+* -- multiply
+/ -- divide (integer style e.g. 3/4 = 0)
+** -- power
+num1./num2. -- accurate divide (e.g. 3./4. = .75)
+
