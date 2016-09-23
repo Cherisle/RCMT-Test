@@ -10,4 +10,5 @@
 / -- divide (integer style e.g. 3/4 = 0)
 ** -- power
 num1./num2. -- accurate divide (e.g. 3./4. = .75)
+// -- floor function(rounds down)
 
