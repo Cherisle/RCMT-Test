@@ -2,6 +2,7 @@
 """
 Created on Fri Sep 23 14:35:36 2016
 
+@author: irayc, cherisle
 """
 
 import numpy as np
