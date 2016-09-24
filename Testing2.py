@@ -2,16 +2,14 @@
 """
 Created on Fri Sep 23 14:35:36 2016
 
-@author: irayc
 """
 
+import numpy as np
 a = 4+3
 print(a)
-numbers = np.genfromtxt('Random10No.txt',delimiter=',')
+numbers = np.genfromtxt('ReadInputFileText.txt',delimiter=',')
 #my_file = open("C:\Users\irayc\Documents\PythonProject\")
 a = 4+3
 print(a)
 
-
 print(numbers)
-
