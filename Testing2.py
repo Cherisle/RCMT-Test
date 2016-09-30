@@ -13,3 +13,4 @@ numbers = np.genfromtxt('ReadInputFileText.txt',delimiter=',')
 #my_file = open("C:\Users\irayc\Documents\PythonProject\")
 a = 4+3
 print(a)
+plot(numbers)
