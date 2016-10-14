@@ -35,3 +35,49 @@ dataframe.boxplot(column = 'Favorite Dice Number')
 
 #creates a boxplot grouped by a criteria(League or Overwatch) .........status - works
 dataframe.boxplot(column = 'Favorite Dice Number', by = 'League or Overwatch')
+
+#Boolean Indexing basically filtering values of a column based on conditions from another set of columns 
+#Example listing all females who are not graduate and got a loan...............................status - uknown
+data.loc[(data["Gender"]=="Female") & (data["Education"]=="Not Graduate") & (data["Loan_Status"]=="Y"), ["Gender","Education","Loan_Status"]]
+
+#Apply returns some value after passing each row/column of a data frame with some function. The function can be both default or user-defined. For instance, here it can be used to find the #missing values in each row and column.
+#status......uknown
+#Create a new function: that returns if value is null
+def num_missing(x):
+  return sum(x.isnull())
+
+#Applying per column: Displays it
+print "Missing values per column:"
+print data.apply(num_missing, axis=0) #axis=0 defines that function is to be applied on each column
+
+#Applying per row:Displays
+print "\nMissing values per row:"
+print data.apply(num_missing, axis=1).head() #axis=1 defines that function is to be applied on each row
+
+#The display in the above code is not really fancy very simple. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
